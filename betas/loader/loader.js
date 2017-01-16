@@ -1,11 +1,22 @@
 data_clean = function(data){
   // convert to array, 1d
   data = data.replace(/\n/g,',')
+  // replace missing (denoted ?) with infinity
+  data = data.replace(/\?/g,"Infinity")
   data = data.split(","); // TODO add other delimiters?
   // map to float
   data = data.map(parseFloat);
-  // remove nan
-  return data.filter(function(v) { return !!v; });
+  // remove nan from data format issues
+  data = data.filter(function(v) { return (!!v || v==0); });
+  // turn infinity back into NaN
+  data = data.map(function(x){
+    if (x==Infinity){
+      return NaN;
+    } else {
+      return x;
+    }
+  });
+  return data;
 }
 
 window.onload = function() {
@@ -33,8 +44,7 @@ window.onload = function() {
                     // create matrix
                     datamat = new MiniMat(data, x_len, y_len);
                     // display matrix out
-                     fileDisplayArea.innerText = datamat.toString();
-                    //fileDisplayArea.innerText = data;
+                    fileDisplayArea.innerText = datamat.toString();
                 }
                 catch (err) {
                     // print erorrs in matrix creation
