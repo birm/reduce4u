@@ -48,4 +48,3 @@ window.onload = function() {
         }
     });
 }
-// this version from http://stackoverflow.com/questions/27522979/read-a-local-text-file-using-javascript
