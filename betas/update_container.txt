@@ -1,0 +1,7 @@
+vi Dockerfile
+sudo docker build -t birm/reduce4u:v1 .
+docker tag f49f9b67c0b4 birm/reduce4u:latest
+sudo docker push birm/reduce4u
+
+
+https://kubernetes.io/docs/hellonode/
