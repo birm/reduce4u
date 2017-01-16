@@ -7,8 +7,6 @@ WORKDIR /app
 CMD ["ember", "server"]
 
 RUN \
-    npm install -g minimat
-    npm install -g dimensionality-reduction
-    npm install -g ember-cli@2.10.0 &&\
-    npm install -g bower@1.8.0 &&\
-    npm install -g phantomjs@2.1.7
+    npm install -g minimat &&\
+    npm install -g dimensionality-reduction &&\
+    npm install -g ember-cli@2.10.0 
