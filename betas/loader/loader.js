@@ -1,3 +1,5 @@
+// load data from file
+
 data_clean = function(data){
   // convert to array, 1d
   data = data.replace(/\n/g,',')
@@ -38,11 +40,14 @@ window.onload = function() {
                     // get x and y sizes
                     var x_len = document.getElementById('x_len');
                     var y_len = document.getElementById('y_len');
+                    var setkey = document.getElementById('setkey').value;
                     // make sure x and y are ints
                     x_len = parseInt(x_len.value);
                     y_len = parseInt(y_len.value);
                     // create matrix
                     datamat = new MiniMat(data, x_len, y_len);
+                    // save matrix to cache
+                    localStorage[setkey] = JSON.stringify(datamat.json());
                     // display matrix out
                     fileDisplayArea.innerText = datamat.toString();
                 }
@@ -57,4 +62,10 @@ window.onload = function() {
             fileDisplayArea.innerText = "File not supported!"
         }
     });
+}
+
+// load data from cache
+function loadFromCache(){
+  var getkey = document.getElementById('getkey').value;
+  fileDisplayArea.innerText = localStorage[getkey];
 }

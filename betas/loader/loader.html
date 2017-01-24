@@ -1,15 +1,20 @@
 <html>
   <div id="page-wrapper">
-      <h1>Load your Data</h1>
+      <h1>Load your Data From File</h1>
       <div>
           Number of Rows: <input type="text" id="x_len">
           Number of Columns: <input type="text" id="y_len">
+          Cache Key to Set data as: <input type="text" id="setkey">
           <br/>
           <br/>
           Select a text file with the data (csv, column major, ? represents missing data):
           <input type="file" id="fileInput">
           <br/>
-
+      </div>
+      <h1>Restore your Data from Cache</h1>
+      <div>
+          Key to get data from: <input type="text" id="getkey">
+          <button onclick="loadFromCache()">Load</button>
       </div>
       <pre id="fileDisplayArea"><pre>
 
