@@ -67,5 +67,5 @@ window.onload = function() {
 // load data from cache
 function loadFromCache(){
   var getkey = document.getElementById('getkey').value;
-  fileDisplayArea.innerText = localStorage[getkey];
+  document.getElementById('fileDisplayArea').innerText = localStorage[getkey];
 }
