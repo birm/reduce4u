@@ -38,8 +38,10 @@
     "ember-welcome-page": "^1.0.3",
     "loader.js": "^4.0.10"
   },
-  "Dependencies": {
-    "minimat": "latest"
+  "dependencies": {
+    "minimat": "latest",
+    "minimat-graph": "latest",
+    "dimensionality-reduction": "latest"
   },
   "engines": {
     "node": ">= 0.12.0"
