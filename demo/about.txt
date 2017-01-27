@@ -1,3 +1,0 @@
-Iris is from http://archive.ics.uci.edu/ml/datasets/Iris, and is 4x150.
-Wine is from http://archive.ics.uci.edu/ml/datasets/Wine, and is 14x178.
-Heart is from http://archive.ics.uci.edu/ml/datasets/Heart+Disease, has MISSING DATA (represented by ?), and is 14x200.
