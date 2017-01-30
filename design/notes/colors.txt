@@ -1,0 +1,6 @@
+background:
+header and footer:
+core:
+contrast:
+accent:
+division:
