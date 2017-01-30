@@ -1,5 +1,5 @@
-background: #A3C4BC
-accent, header and footer: #508991
-core: #6ABEA7
-contrast: #FF6F59
-division: #172A3A
+background: #A3C4BC (CAMBRIDGE BLUE)
+accent: #508991 (STEEL TEAL)
+core: #6ABEA7 (GREEN SHEEN)
+contrast: #FF6F59 (BITTERSWEET)
+division, header and footer: #172A3A (YANKEES BLUE)
