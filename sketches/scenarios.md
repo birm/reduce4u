@@ -1,0 +1,3 @@
+Scenario 1: Bob is working with his team on a project about bee migration patterns. A core part of the paper Bob plans on proposing is a complex visualization. His team is remote, and has an established messaging protocol (slack/email). His goal is to get a report using the team members' experience that he can use to make his chart. He does not care about using the tool to have other people view read only, as he'll be making a chart in another context.
+
+Scenario 2: Caitlyn is working on a hobby project about traffic in her city. She invites one group of people to help her determine what's important in the data, and, upon completion, wants different viewers to be able to view the result of the work on the data, but not edit it.
